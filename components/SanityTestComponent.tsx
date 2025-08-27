@@ -28,7 +28,7 @@ export function SanityTestComponent() {
 
   return (
     <div className="p-4 border rounded bg-blue-50">
-      <h3 className="font-bold mb-2">🎉 Live Sanity Data:</h3>
+                  <h3 className="font-semibold mb-2">🎉 Live Sanity Data:</h3>
       <ul className="space-y-1">
         {categories.map((category) => (
           <li key={category._id} className="text-sm">

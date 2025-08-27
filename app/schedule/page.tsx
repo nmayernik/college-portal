@@ -1,7 +1,5 @@
-"use client"
-
-import Component from "../../coaching-form"
+import { redirect } from 'next/navigation'
 
 export default function SchedulePage() {
-  return <Component />
+  redirect('/')
 }

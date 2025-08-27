@@ -235,6 +235,12 @@ const config: Config = {
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out'
+  		},
+  		transitionTimingFunction: {
+  			'ease-out-quint': 'cubic-bezier(.23, 1, .32, 1)',
+  			'ease-out-quart': 'cubic-bezier(.165, .84, .44, 1)',
+  			'ease-out-cubic': 'cubic-bezier(.215, .61, .355, 1)',
+  			'ease-out-quad': 'cubic-bezier(.25, .46, .45, .94)'
   		}
   	}
   },
