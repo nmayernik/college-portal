@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           <div className="flex flex-col items-start gap-x-8 gap-y-2">
             <div className="flex items-end gap-x-2 pt-2">
-              <Logo />
+              <Logo variant="vector" className="text-[#1A475F]" />
                 <div className="text-[#1A475F] text-sm">College Coach</div>
             </div>
 

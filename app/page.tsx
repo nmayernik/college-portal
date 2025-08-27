@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import Logo from "@/components/ui/logo"
 import { 
   Calendar, 
   GraduationHat01,
@@ -22,8 +23,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <GraduationHat01 className="h-8 w-8 text-blue-600" />
-              <span className="text-xl font-semibold text-gray-900">Bright Horizons</span>
+              <Logo variant="vector" className="h-8 text-blue-600" />
             </div>
             <div className="hidden md:flex items-center space-x-6 text-sm text-gray-600">
               <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
@@ -156,8 +156,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <GraduationHat01 className="h-6 w-6 text-blue-400" />
-                <span className="text-lg font-semibold">Bright Horizons</span>
+                <Logo variant="vector" className="h-6 text-blue-400" />
               </div>
               <p className="text-gray-400">
                 Empowering students to reach their full potential through personalized coaching and guidance.
