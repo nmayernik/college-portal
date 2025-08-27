@@ -1,6 +1,7 @@
 "use client"
 import Header from "./components/ui/header/header"
 import { useState } from "react"
+import Link from "next/link"
 
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -11,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Calendar } from "@/components/ui/calendar"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Search, Plus, Users, HelpCircle, Grid3X3, User, ChevronLeft, ChevronRight, Grip } from "lucide-react"
+import { Search, Plus, Users, HelpCircle, Grid3X3, User, ChevronLeft, ChevronRight, Grip, ArrowLeft } from "lucide-react"
 import Footer  from "./components/ui/footer"
 import CoachingFormAccordion from "./components/CoachingFormAccordion"
 
@@ -39,8 +40,16 @@ export default function Component() {
     <div className="min-h-screen bg-[#fafafa] flex flex-col">
       <Header />
       
+      {/* Back Button */}
+      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-4">
+        <Link href="/" className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+          <ArrowLeft className="h-4 w-4 mr-2" />
+          Back to Home
+        </Link>
+      </div>
+      
       {/* Main Content */}
-      <main className="flex-1 md:max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-2 sm:pt-3 lg:pt-12 pb-4 sm:pb-6 lg:pb-8 min-h-screen">
+      <main className="flex-1 md:max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-2 sm:pt-3 lg:pt-8 pb-4 sm:pb-6 lg:pb-8 min-h-screen">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-16">
           {/* Left Sidebar - Hidden on mobile, shows as progress bar instead */}
           <div className="hidden lg:block lg:col-span-1">
