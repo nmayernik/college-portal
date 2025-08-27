@@ -1,5 +1,7 @@
 "use client"
 
+import { Avatar, AvatarFallback } from "@/components/ui/avatar"
+
 interface AccountButtonProps {
   className?: string
   initials?: string
@@ -12,21 +14,21 @@ export default function AccountButton({
   accountText = "Account" 
 }: AccountButtonProps) {
   return (
-    <div className={`relative ${className}`} data-name="Account">
+    <div className={`relative flex items-center ${className}`} data-name="Account">
       {/* Base background */}
       <div className="absolute bg-[#f2f2f2] bottom-0 right-0 rounded-[100px] top-0 w-[129px]" data-name="Base" />
       
-      {/* Avatar circle with initials */}
-      <div className="absolute bottom-0 left-0 overflow-clip right-[67.44%] top-0" data-name="Avatar">
-        <div className="absolute inset-0 bg-[#1a475f] rounded-full flex items-center justify-center" data-name="Oval">
-          <div className="font-['Mulish:ExtraBold',_sans-serif] font-extrabold leading-[0] text-[#ffffff] text-[15px] text-nowrap text-center uppercase">
+      {/* Avatar with initials */}
+      <div className="relative z-10 ml-2">
+        <Avatar className="h-8 w-8 bg-[#1a475f]">
+          <AvatarFallback className="bg-[#1a475f] text-white font-mulish font-extrabold text-[15px] uppercase">
             {initials}
-          </div>
-        </div>
+          </AvatarFallback>
+        </Avatar>
       </div>
       
       {/* Account text */}
-      <div className="absolute font-['Mulish:Bold',_sans-serif] font-bold leading-[0] left-[113px] text-[#1a475f] text-[14px] text-nowrap text-right translate-x-[-100%]" style={{ top: "calc(50% - 9px)" }}>
+      <div className="relative z-10 ml-3 font-mulish font-bold text-[#1a475f] text-[14px]">
         {accountText}
       </div>
     </div>
