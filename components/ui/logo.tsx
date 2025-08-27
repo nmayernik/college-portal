@@ -8,7 +8,7 @@ interface LogoProps {
 export default function Logo({ variant = 'image', className = '' }: LogoProps) {
   if (variant === 'vector') {
     return (
-      <div className={className}>
+      <div className={`flex items-center justify-center ${className}`}>
         <svg 
           width="156" 
           height="22" 
