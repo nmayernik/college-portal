@@ -1,10 +1,10 @@
 "use client"
 
-import { Search, Plus, Users, HelpCircle, Grid3X3, User, ChevronLeft, ChevronRight, Grip } from "lucide-react"
+import { Search, Plus, Users, HelpCircle, Grid3X3, ChevronLeft, ChevronRight, Grip } from "lucide-react"
 import { useState } from "react"
 import Logo from "@/components/ui/logo"
 import HeaderItem from "./header-item"
-
+import AccountButton from "@/components/ui/account-button"
 
 export default function Header() {
  return ( 
@@ -32,8 +32,7 @@ export default function Header() {
           <div className="flex items-center gap-x-5">
             <HelpCircle className="w-5.5 h-5.5 text-[#1A475F]" />
             <Grip className="w-5.5 h-5.5 text-[#1A475F]" />
-            <User className="w-5.5 h-5.5 text-[#1A475F]" />
-
+            <AccountButton className="w-[129px] h-[40px] cursor-pointer" />
           </div>
         </div>
       </div>
