@@ -3,6 +3,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import Logo from "@/components/ui/logo"
+import AccountButton from "@/components/ui/account-button"
 import { 
   Calendar, 
   GraduationHat01,
@@ -29,6 +30,9 @@ export default function LandingPage() {
               <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
               <a href="#services" className="hover:text-blue-600 transition-colors">Services</a>
               <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+            <div className="flex items-center">
+              <AccountButton className="w-[129px] h-[40px] cursor-pointer" />
             </div>
           </div>
         </div>
