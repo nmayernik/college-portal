@@ -2,7 +2,16 @@
 
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calendar, Users, Clock, Star, ArrowRight, GraduationCap, BookOpen, Target } from "lucide-react"
+import { 
+  Calendar, 
+  GraduationHat01,
+  AlarmClock,
+  Star01,
+  ArrowRight,
+  BookOpen01,
+  Target01,
+  Users01
+} from "@untitledui/icons"
 import Link from "next/link"
 
 export default function LandingPage() {
@@ -13,7 +22,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="flex items-center space-x-2">
-              <GraduationCap className="h-8 w-8 text-blue-600" />
+              <GraduationHat01 className="h-8 w-8 text-blue-600" />
               <span className="text-xl font-semibold text-gray-900">Bright Horizons</span>
             </div>
             <div className="hidden md:flex items-center space-x-6 text-sm text-gray-600">
@@ -54,7 +63,7 @@ export default function LandingPage() {
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="text-center">
               <div className="mx-auto w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                <Users className="h-6 w-6 text-blue-600" />
+                <Users01 className="h-6 w-6 text-blue-600" />
               </div>
               <CardTitle className="text-xl">Expert Coaches</CardTitle>
               <CardDescription>
@@ -66,7 +75,7 @@ export default function LandingPage() {
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="text-center">
               <div className="mx-auto w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                <Target className="h-6 w-6 text-green-600" />
+                <Target01 className="h-6 w-6 text-green-600" />
               </div>
               <CardTitle className="text-xl">Personalized Approach</CardTitle>
               <CardDescription>
@@ -78,7 +87,7 @@ export default function LandingPage() {
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="text-center">
               <div className="mx-auto w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                <Clock className="h-6 w-6 text-purple-600" />
+                <AlarmClock className="h-6 w-6 text-purple-600" />
               </div>
               <CardTitle className="text-xl">Flexible Scheduling</CardTitle>
               <CardDescription>
@@ -90,7 +99,7 @@ export default function LandingPage() {
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="text-center">
               <div className="mx-auto w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center mb-4">
-                <BookOpen className="h-6 w-6 text-orange-600" />
+                <BookOpen01 className="h-6 w-6 text-orange-600" />
               </div>
               <CardTitle className="text-xl">Academic Support</CardTitle>
               <CardDescription>
@@ -102,7 +111,7 @@ export default function LandingPage() {
           <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
             <CardHeader className="text-center">
               <div className="mx-auto w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                <Star className="h-6 w-6 text-red-600" />
+                <Star01 className="h-6 w-6 text-red-600" />
               </div>
               <CardTitle className="text-xl">Career Guidance</CardTitle>
               <CardDescription>
@@ -147,7 +156,7 @@ export default function LandingPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <GraduationCap className="h-6 w-6 text-blue-400" />
+                <GraduationHat01 className="h-6 w-6 text-blue-400" />
                 <span className="text-lg font-semibold">Bright Horizons</span>
               </div>
               <p className="text-gray-400">
